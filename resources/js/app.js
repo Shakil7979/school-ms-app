@@ -1,4 +1,14 @@
 import { createApp } from 'vue';
-import App from './components/App.vue';
+import App from './App.vue';
+import router from './router'
 
-createApp(App).mount('#app');
+
+const app = createApp(App)
+
+router.afterEach((to) => {
+  const defaultTitle = 'My App' // fallback
+  document.title = to.meta.title || defaultTitle
+})
+
+app.use(router)
+app.mount('#app')
