@@ -7,21 +7,18 @@
         "dev": "vite"
     },
     "devDependencies": {
-        "@tailwindcss/forms": "^0.5.3",
-        "@tailwindcss/typography": "^0.5.9",
-        "@vitejs/plugin-vue": "^6.0.0",
-        "autoprefixer": "^10.4.14",
+        "@tailwindcss/postcss": "^4.1.11",
+        "@vitejs/plugin-vue": "^6.0.1",
         "laravel-vite-plugin": "^2.0.0",
-        "postcss": "^8.4.21",
-        "tailwindcss": "^3.3.2",
         "vite": "^7.1.0",
         "vue": "^3.4.0"
     },
     "dependencies": {
         "@inertiajs/vue3": "^2.0.17",
-        "@vitejs/plugin-vue": "^6.0.1",
+        "@tailwindcss/vite": "^4.1.11",
         "axios": "^1.4.0",
         "bootstrap": "^5.3.7",
+        "tailwindcss": "^4.1.11",
         "vue": "^3.5.18",
         "vue-router": "^4.5.1"
     },
