@@ -1,6 +1,9 @@
 <script setup>
 import { ref } from 'vue'
 
+import logo from "@/assets/images/logo.png";
+import owner from "@/assets/images/user/owner.jpg";
+
 const sidebarToggle = ref(false)
 const menuToggle = ref(false)
 const darkMode = ref(false)
@@ -109,8 +112,8 @@ const closeDropdowns = () => {
 
         <!-- Logo -->
         <a href="/" class="lg:hidden">
-          <img class="dark:hidden" src="./images/logo/logo.svg" alt="Logo" />
-          <img class="hidden" src="./images/logo/logo-dark.svg" alt="Logo" />
+          <img class="dark:hidden" :src="logo" alt="Logo" />
+          <img class="hidden" :src="logo" alt="Logo" />
         </a>
 
         <!-- Mobile Menu Toggle -->
@@ -593,7 +596,7 @@ const closeDropdowns = () => {
               @click.prevent="toggleUserDropdown"
             >
               <span class="mr-3 h-11 w-11 overflow-hidden rounded-full">
-                <img src="./images/user/owner.jpg" alt="User" />
+                <img :src="owner" alt="User" />
               </span>
               <span class="text-theme-sm mr-1 block font-medium">Musharof</span>
               <svg
